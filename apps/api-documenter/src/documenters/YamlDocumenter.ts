@@ -405,11 +405,11 @@ export class YamlDocumenter {
         for (const exampleBlock of exampleBlocks) {
           const example: string = this._renderMarkdown(exampleBlock.content, apiItem);
           if (example) {
-            yamlItem.example = [...(yamlItem.example || []),
+            yamlItem.example = [
+              ...(yamlItem.example || []),
               `<div class="codewrapper"><pre><code>${example}</code></pre></div>`
             ];
           }
-
         }
       }
 
