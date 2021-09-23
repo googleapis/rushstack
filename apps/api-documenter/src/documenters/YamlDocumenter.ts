@@ -56,7 +56,6 @@ import {
 import { IYamlTocFile, IYamlTocItem } from '../yaml/IYamlTocFile';
 import { Utilities } from '../utils/Utilities';
 import { CustomMarkdownEmitter } from '../markdown/CustomMarkdownEmitter';
-import { convertUDPYamlToSDP } from '../utils/ToSdpConvertHelper';
 
 const yamlApiSchema: JsonSchema = JsonSchema.fromFile(
   path.join(__dirname, '..', 'yaml', 'typescript.schema.json')
@@ -398,30 +397,19 @@ export class YamlDocumenter {
       }
 
       if (tsdocComment) {
-        // Write the @remarks block
-        // if (tsdocComment.remarksBlock) {
-        //   output.appendNode(new DocHeading({ configuration: this._tsdocConfiguration, title: 'Remarks' }));
-        //   this._appendSection(output, tsdocComment.remarksBlock.content);
-        // }
-
         // Write the @example blocks
         const exampleBlocks: DocBlock[] = tsdocComment.customBlocks.filter(
           (x) => x.blockTag.tagNameWithUpperCase === StandardTags.example.tagNameWithUpperCase
         );
 
-        let exampleNumber: number = 1;
         for (const exampleBlock of exampleBlocks) {
           const example: string = this._renderMarkdown(exampleBlock.content, apiItem);
           if (example) {
-            yamlItem.example = [...(yamlItem.example || []), example];
+            yamlItem.example = [...(yamlItem.example || []),
+              `<div class="codewrapper"><pre><code>${example}</code></pre></div>`
+            ];
           }
-          // const heading: string = exampleBlocks.length > 1 ? `Example ${exampleNumber}` : 'Example';
 
-          // output.appendNode(new DocHeading({ configuration: this._tsdocConfiguration, title: heading }));
-
-          // this._appendSection(output, exampleBlock.content);
-
-          ++exampleNumber;
         }
       }
 
