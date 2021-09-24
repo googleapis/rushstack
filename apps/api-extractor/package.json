@@ -34,12 +34,10 @@
     "build": "heft test --clean"
   },
   "dependencies": {
-    "@microsoft/api-extractor-model": "workspace:*",
+    "@microsoft/api-extractor-model": "^7.13.9",
     "@microsoft/tsdoc": "0.13.2",
     "@microsoft/tsdoc-config": "~0.15.2",
-    "@rushstack/node-core-library": "workspace:*",
-    "@rushstack/rig-package": "workspace:*",
-    "@rushstack/ts-command-line": "workspace:*",
+    "@rushstack/eslint-config": "^2.4.1",
     "colors": "~1.2.1",
     "lodash": "~4.17.15",
     "resolve": "~1.17.0",
