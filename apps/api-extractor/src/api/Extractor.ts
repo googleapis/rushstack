@@ -182,7 +182,6 @@ export class Extractor {
   ): ExtractorResult {
     const extractorConfig: ExtractorConfig = ExtractorConfig.loadFileAndPrepare(configFilePath);
 
-    console.log('load config');
     return Extractor.invoke(extractorConfig, options);
   }
 
@@ -266,15 +265,11 @@ export class Extractor {
       messageRouter.logDiagnostic(''); // skip a line after any diagnostic messages
     }
 
-    console.log('invoke');
     if (extractorConfig.docModelEnabled) {
-      console.log('docModelEnabled');
       messageRouter.logVerbose(
         ConsoleMessageId.WritingDocModelFile,
         'Writing: ' + extractorConfig.apiJsonFilePath
       );
-      console.log('save to json '  + extractorConfig.apiJsonFilePath);
-      // console.log(JSON.stringify(Extractor.packageName));
       apiPackage.saveToJsonFile(extractorConfig.apiJsonFilePath, {
         toolPackage: Extractor.packageName,
         toolVersion: Extractor.version,
@@ -404,7 +399,6 @@ export class Extractor {
     }
 
     if (extractorConfig.tsdocMetadataEnabled) {
-      console.log('metaddata');
       // Write the tsdoc-metadata.json file for this project
       PackageMetadataManager.writeTsdocMetadataFile(
         extractorConfig.tsdocMetadataFilePath,

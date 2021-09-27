@@ -42,7 +42,7 @@ export class ApiDocumentedItem extends ApiItem {
     jsonObject: IApiItemJson
   ): void {
     super.onDeserializeInto(options, context, jsonObject);
-    console.log('OnDeserializeInto');
+
     const documentedJson: IApiDocumentedItemJson = jsonObject as IApiDocumentedItemJson;
 
     if (documentedJson.docComment) {
@@ -54,7 +54,6 @@ export class ApiDocumentedItem extends ApiItem {
       // using a different release of the software that used an incompatible syntax.
       const parserContext: tsdoc.ParserContext = tsdocParser.parseString(documentedJson.docComment);
 
-      console.log('*' + parserContext.docComment + '$');
       options.docComment = parserContext.docComment;
     }
   }
