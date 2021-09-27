@@ -141,8 +141,10 @@ export class RunAction extends CommandLineAction {
       typescriptCompilerFolder: typescriptCompilerFolder
     });
 
+    // console.log(JSON.stringify(extractorResult));
+
     if (extractorResult.succeeded) {
-      console.log(os.EOL + 'API Extractor completed successfully');
+      console.log(os.EOL + 'XXXXXXX API Extractor completed successfully - locally');
     } else {
       process.exitCode = 1;
 

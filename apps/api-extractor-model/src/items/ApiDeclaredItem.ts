@@ -96,7 +96,7 @@ export class ApiDeclaredItem extends ApiDocumentedItem {
           }
         }
         if (modifierTags.length > 0) {
-          return '/** ' + modifierTags.join(' ') + ' */\n' + excerpt;
+          return '/** ' + modifierTags.join(' ') + ' */\nFOO' + excerpt;
         }
       }
     }

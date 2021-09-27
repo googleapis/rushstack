@@ -245,6 +245,11 @@ export class ApiPackage extends ApiItemContainerMixin(ApiNameMixin(ApiDocumented
       options = {};
     }
 
+    // /Users/franzih/code/gcp/rushstack/apps/api-extractor-model/src/model/ApiPackage.ts
+
+    console.log('saveToJsonFile in the package in api-extractor-model');
+
+
     const packageJson: IPackageJson = PackageJsonLookup.loadOwnPackageJson(__dirname);
 
     const tsdocConfigFile: TSDocConfigFile = TSDocConfigFile.loadFromParser(this.tsdocConfiguration);
@@ -261,7 +266,10 @@ export class ApiPackage extends ApiItemContainerMixin(ApiNameMixin(ApiDocumented
         tsdocConfig
       }
     } as IApiPackageJson;
+    // console.log('before' + JSON.stringify(this));
+
     this.serializeInto(jsonObject);
+    console.log('xxx' + JSON.stringify(jsonObject));
     JsonFile.save(jsonObject, apiJsonFilename, options);
   }
 
