@@ -12,7 +12,7 @@ const myPackageVersion: string = PackageJsonLookup.loadOwnPackageJson(__dirname)
 
 console.log(
   os.EOL +
-    colors.bold(`yyyyyyyyy api-documenter ${myPackageVersion} ` + colors.cyan(' - https://api-extractor.com/') + os.EOL)
+    colors.bold(`api-documenter ${myPackageVersion} ` + colors.cyan(' - https://api-extractor.com/') + os.EOL)
 );
 
 const parser: ApiDocumenterCommandLine = new ApiDocumenterCommandLine();
