@@ -410,27 +410,25 @@ export class YamlDocumenter {
           if (example) {
             // for fenced code: example is the code string without comment syntax at the beginning of each line
             // for not fenced code: <caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket Another example:
-            // console.log(example);
 
+            // resolve a region_tag, see https://github.com/googleapis/jsdoc-region-tag/blob/main/src/index.js
             const REGION_TAG = 'region\\\_tag';
             if (example.includes(REGION_TAG)) {
               if (sampleCache.size === 0) {
                 exports.loadSampleCache();
               }
 
-              console.log(example);
               //<caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket Another example:
               const match = example.match(/region\\\_tag:([^ ]*) (.*)/);
               if(!match) {throw new Error('wrong region tag ${example}');}
-              const key = match[1];
+              // remove the escaping slashes from they key
+              const key = match[1].split('\\').join('');
               const intro = match[2];
-              console.log(key);
-              console.log(intro);
               const sample = sampleCache.get(key);
               if (!sample) {
                 console.warn(`could not find sample ${key}`);
               } else {
-                example = intro ? `${intro}\n${sample}` : sample;
+                example = intro + "\n```\n" + sample + "\n```";
               }
             }
 
