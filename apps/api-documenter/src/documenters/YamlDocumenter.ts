@@ -406,6 +406,18 @@ export class YamlDocumenter {
         for (const exampleBlock of exampleBlocks) {
           const example: string = this._renderMarkdown(exampleBlock.content, apiItem);
           if (example) {
+            // for fenced code: example is the code string without comment syntax at the beginning of each line
+            // for not fenced code: <caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket Another example:
+            // console.log(example);
+
+
+            if (example.includes('region\\\_tag')) {
+              console.log(example);
+              const [, tag, intro] = example.split(/\r|\n/);
+              // const key = tag.replace('region\_tag:', '').trim();
+              // console.log(key);
+            }
+
             yamlItem.example = [...(yamlItem.example || []), example];
           }
         }
