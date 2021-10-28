@@ -9,7 +9,7 @@ import { Extractor } from './api/Extractor';
 
 console.log(
   os.EOL +
-    colors.bold(`api-extractor ${Extractor.version} ` + colors.cyan(' - https://api-extractor.com/') + os.EOL)
+    colors.bold(`xxxxxxxx api-extractor ${Extractor.version} ` + colors.cyan(' - https://api-extractor.com/') + os.EOL)
 );
 
 const parser: ApiExtractorCommandLine = new ApiExtractorCommandLine();
