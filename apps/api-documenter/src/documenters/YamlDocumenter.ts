@@ -56,7 +56,9 @@ import {
 import { IYamlTocFile, IYamlTocItem } from '../yaml/IYamlTocFile';
 import { Utilities } from '../utils/Utilities';
 import { CustomMarkdownEmitter } from '../markdown/CustomMarkdownEmitter';
-import { convertUDPYamlToSDP } from '../utils/ToSdpConvertHelper';
+
+
+const sampleCache = new Map();
 
 const yamlApiSchema: JsonSchema = JsonSchema.fromFile(
   path.join(__dirname, '..', 'yaml', 'typescript.schema.json')
@@ -404,8 +406,32 @@ export class YamlDocumenter {
         );
 
         for (const exampleBlock of exampleBlocks) {
-          const example: string = this._renderMarkdown(exampleBlock.content, apiItem);
+          let example: string = this._renderMarkdown(exampleBlock.content, apiItem);
           if (example) {
+            // for fenced code: example is the code string without comment syntax at the beginning of each line
+            // for not fenced code: <caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket Another example:
+
+            // resolve a region_tag, see https://github.com/googleapis/jsdoc-region-tag/blob/main/src/index.js
+            const REGION_TAG = 'region\\\_tag';
+            if (example.includes(REGION_TAG)) {
+              if (sampleCache.size === 0) {
+                exports.loadSampleCache();
+              }
+
+              //<caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket Another example:
+              const match = example.match(/region\\\_tag:([^ ]*) (.*)/);
+              if(!match) {throw new Error('wrong region tag ${example}');}
+              // remove the escaping slashes from they key
+              const key = match[1].split('\\').join('');
+              const intro = match[2];
+              const sample = sampleCache.get(key);
+              if (!sample) {
+                console.warn(`could not find sample ${key}`);
+              } else {
+                example = intro + "\n```\n" + sample + "\n```";
+              }
+            }
+
             yamlItem.example = [...(yamlItem.example || []), example];
           }
         }
@@ -1049,5 +1075,51 @@ export class YamlDocumenter {
   private _deleteOldOutputFiles(outputFolder: string): void {
     console.log('Deleting old output from ' + outputFolder);
     FileSystem.ensureEmptyFolder(outputFolder);
+  }
+}
+
+
+const glob = require('glob');
+const {readFileSync, statSync} = require('fs');
+const {resolve} = require('path');
+
+const SAMPLES_DIRECTORY =
+  process.env.SAMPLES_DIRECTORY || resolve(process.cwd(), './samples');
+const REGION_START_REGEX = /\[START\s+([^\]]+)/;
+const REGION_END_REGEX = /\[END/;
+
+exports.loadSampleCache = function () {
+  const sampleCandidates = glob.sync(`${SAMPLES_DIRECTORY}/**/*.{js,ts}`, {
+    ignore: ['node_modules'],
+  });
+  for (const candidate of sampleCandidates) {
+    const stat = statSync(candidate);
+    if (!stat.isFile()) continue;
+    const content = readFileSync(candidate, 'utf8');
+    if (REGION_START_REGEX.test(content)) {
+      parseSamples(content);
+    }
+  }
+  return sampleCache;
+};
+
+function parseSamples(content: string) {
+  let key;
+  let sample;
+  let inTag = false;
+  for (const line of content.split(/\r?\n/)) {
+    if (inTag && REGION_END_REGEX.test(line)) {
+      sampleCache.set(key, sample);
+      inTag = false;
+    } else if (inTag) {
+      sample += `${line}\n`;
+    } else {
+      const match = line.match(REGION_START_REGEX);
+      if (match) {
+        key = match[1];
+        sample = '';
+        inTag = true;
+      }
+    }
   }
 }
