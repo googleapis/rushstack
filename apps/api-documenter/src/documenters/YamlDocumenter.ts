@@ -420,7 +420,7 @@ export class YamlDocumenter {
 
               //<caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket Another example:
               const match = example.match(/region\\\_tag:([^ ]*) (.*)/);
-              if(!match) {throw new Error('wrong region tag ${example}');}
+              if(!match) {throw new Error(`wrong region tag ${example}`);}
               // remove the escaping slashes from they key
               const key = match[1].split('\\').join('');
               const intro = match[2];
