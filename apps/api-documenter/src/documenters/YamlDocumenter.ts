@@ -418,17 +418,20 @@ export class YamlDocumenter {
                 exports.loadSampleCache();
               }
 
+              //2 options for tags with and without the intro
               //<caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket Another example:
-              const match = example.match(/region\\\_tag:([^ ]*) (.*)/);
+              //<caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket
+              const match = example.match(/region\\\_tag:([^ ]*)( (.*))?/);
               if(!match) {throw new Error('wrong region tag ${example}');}
               // remove the escaping slashes from they key
               const key = match[1].split('\\').join('');
-              const intro = match[2];
+              const intro = match[3];
               const sample = sampleCache.get(key);
               if (!sample) {
                 console.warn(`could not find sample ${key}`);
               } else {
-                example = intro + "\n```\n" + sample + "\n```";
+                const preamble = intro ? intro + '\n' : '';
+                example = preamble + '```\n' + sample + '\n```';
               }
             }
 
