@@ -429,7 +429,7 @@ export class YamlDocumenter {
               const intro: string = match[3];
               const sample: string = sampleCache.get(key);
               if (!sample) {
-                console.warn(`could not find sample ${key}`);
+                throw new Error(`could not find sample ${key}`);
               } else {
                 const preamble: string = intro ? intro + '\n' : '';
                 example = preamble + '<pre class="prettyprint"><code>\n' + sample + '\n</pre></code>';
