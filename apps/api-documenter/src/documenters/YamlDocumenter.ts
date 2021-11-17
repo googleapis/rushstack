@@ -691,7 +691,9 @@ export class YamlDocumenter {
     };
     yamlItem.syntax = syntax;
 
-    if (apiItem.propertyTypeExcerpt.text) {
+    if (yamlItem.type !== 'property' && apiItem.propertyTypeExcerpt.text) {
+      // do not set a return type for properties as it will render a useless
+      // Property value box
       syntax.return = {
         type: [this._renderType(uid, apiItem.propertyTypeExcerpt)]
       };
