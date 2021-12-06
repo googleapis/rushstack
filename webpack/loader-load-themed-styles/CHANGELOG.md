@@ -1,6 +1,53 @@
 # Change Log - @microsoft/loader-load-themed-styles
 
-This log was last generated on Wed, 13 Oct 2021 15:09:54 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:33 GMT and should not be manually modified.
+
+## 1.9.115
+Mon, 06 Dec 2021 16:08:33 GMT
+
+_Version update only_
+
+## 1.9.114
+Fri, 03 Dec 2021 03:05:22 GMT
+
+_Version update only_
+
+## 1.9.113
+Tue, 30 Nov 2021 20:18:41 GMT
+
+_Version update only_
+
+## 1.9.112
+Mon, 29 Nov 2021 07:26:16 GMT
+
+_Version update only_
+
+## 1.9.111
+Sat, 06 Nov 2021 00:09:13 GMT
+
+_Version update only_
+
+## 1.9.110
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 1.9.109
+Thu, 28 Oct 2021 23:48:23 GMT
+
+_Version update only_
+
+## 1.9.108
+Thu, 28 Oct 2021 00:08:22 GMT
+
+_Version update only_
+
+## 1.9.107
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 1.9.106
 Wed, 13 Oct 2021 15:09:54 GMT

@@ -1,10 +1,11 @@
 {
   "name": "@rushstack/stream-collator",
-  "version": "4.0.138",
+  "version": "4.0.146",
   "description": "Display intelligible realtime output from concurrent processes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/microsoft/rushstack/tree/master/libraries/stream-collator"
+    "url": "https://github.com/microsoft/rushstack.git",
+    "directory": "libraries/stream-collator"
   },
   "main": "lib/index.js",
   "typings": "dist/stream-collator.d.ts",

@@ -1,6 +1,6 @@
 {
   "name": "@rushstack/typings-generator",
-  "version": "0.4.3",
+  "version": "0.5.3",
   "description": "This library provides functionality for automatically generating typings for non-TS files.",
   "keywords": [
     "dts",
@@ -12,7 +12,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/microsoft/rushstack/tree/master/libraries/typings-generator"
+    "url": "https://github.com/microsoft/rushstack.git",
+    "directory": "libraries/typings-generator"
   },
   "scripts": {
     "build": "heft build --clean"
@@ -25,8 +26,8 @@
   },
   "devDependencies": {
     "@rushstack/eslint-config": "workspace:*",
-    "@rushstack/heft": "0.41.6",
-    "@rushstack/heft-node-rig": "1.2.25",
+    "@rushstack/heft": "workspace:*",
+    "@rushstack/heft-node-rig": "workspace:*",
     "@types/glob": "7.1.1"
   }
 }

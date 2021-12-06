@@ -1,6 +1,48 @@
 # Change Log - @rushstack/rundown
 
-This log was last generated on Wed, 13 Oct 2021 15:09:55 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:33 GMT and should not be manually modified.
+
+## 1.0.162
+Mon, 06 Dec 2021 16:08:33 GMT
+
+_Version update only_
+
+## 1.0.161
+Fri, 03 Dec 2021 03:05:22 GMT
+
+_Version update only_
+
+## 1.0.160
+Tue, 30 Nov 2021 20:18:41 GMT
+
+_Version update only_
+
+## 1.0.159
+Mon, 29 Nov 2021 07:26:16 GMT
+
+_Version update only_
+
+## 1.0.158
+Sat, 06 Nov 2021 00:09:13 GMT
+
+_Version update only_
+
+## 1.0.157
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 1.0.156
+Thu, 28 Oct 2021 00:08:22 GMT
+
+_Version update only_
+
+## 1.0.155
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 1.0.154
 Wed, 13 Oct 2021 15:09:55 GMT

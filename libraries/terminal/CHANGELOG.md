@@ -1,6 +1,48 @@
 # Change Log - @rushstack/terminal
 
-This log was last generated on Wed, 13 Oct 2021 15:09:55 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:33 GMT and should not be manually modified.
+
+## 0.3.15
+Mon, 06 Dec 2021 16:08:33 GMT
+
+_Version update only_
+
+## 0.3.14
+Fri, 03 Dec 2021 03:05:23 GMT
+
+_Version update only_
+
+## 0.3.13
+Tue, 30 Nov 2021 20:18:41 GMT
+
+_Version update only_
+
+## 0.3.12
+Mon, 29 Nov 2021 07:26:16 GMT
+
+_Version update only_
+
+## 0.3.11
+Sat, 06 Nov 2021 00:09:13 GMT
+
+_Version update only_
+
+## 0.3.10
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 0.3.9
+Thu, 28 Oct 2021 00:08:22 GMT
+
+_Version update only_
+
+## 0.3.8
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 0.3.7
 Wed, 13 Oct 2021 15:09:55 GMT

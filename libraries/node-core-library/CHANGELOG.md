@@ -1,6 +1,41 @@
 # Change Log - @rushstack/node-core-library
 
-This log was last generated on Wed, 13 Oct 2021 15:09:54 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:33 GMT and should not be manually modified.
+
+## 3.44.1
+Mon, 06 Dec 2021 16:08:33 GMT
+
+_Version update only_
+
+## 3.44.0
+Fri, 03 Dec 2021 03:05:22 GMT
+
+### Minor changes
+
+- Replace const enums with conventional enums to allow for compatability with JavaScript consumers.
+
+## 3.43.2
+Sat, 06 Nov 2021 00:09:13 GMT
+
+### Patches
+
+- Updated Path.convertToSlashes() to use replace(/\\/g, '/') instead of split/join for better performance.
+
+## 3.43.1
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 3.43.0
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Minor changes
+
+- Add more elaborate "repository" field types in IPackageJson.
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 3.42.3
 Wed, 13 Oct 2021 15:09:54 GMT

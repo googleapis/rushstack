@@ -1,6 +1,62 @@
 # Change Log - @rushstack/set-webpack-public-path-plugin
 
-This log was last generated on Wed, 13 Oct 2021 15:09:55 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:33 GMT and should not be manually modified.
+
+## 3.3.5
+Mon, 06 Dec 2021 16:08:33 GMT
+
+_Version update only_
+
+## 3.3.4
+Fri, 03 Dec 2021 03:05:22 GMT
+
+_Version update only_
+
+## 3.3.3
+Tue, 30 Nov 2021 20:18:41 GMT
+
+_Version update only_
+
+## 3.3.2
+Mon, 29 Nov 2021 07:26:16 GMT
+
+_Version update only_
+
+## 3.3.1
+Thu, 11 Nov 2021 01:17:02 GMT
+
+### Patches
+
+- Update typings to only import from "webpack."
+
+## 3.3.0
+Wed, 10 Nov 2021 16:09:47 GMT
+
+### Minor changes
+
+- Introduce a warning when running in Webpack 5.
+
+## 3.2.90
+Sat, 06 Nov 2021 00:09:13 GMT
+
+_Version update only_
+
+## 3.2.89
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 3.2.88
+Thu, 28 Oct 2021 00:08:22 GMT
+
+_Version update only_
+
+## 3.2.87
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 3.2.86
 Wed, 13 Oct 2021 15:09:55 GMT

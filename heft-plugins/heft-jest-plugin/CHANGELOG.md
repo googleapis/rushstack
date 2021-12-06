@@ -1,6 +1,43 @@
 # Change Log - @rushstack/heft-jest-plugin
 
-This log was last generated on Wed, 13 Oct 2021 15:09:54 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:32 GMT and should not be manually modified.
+
+## 0.1.49
+Mon, 06 Dec 2021 16:08:32 GMT
+
+_Version update only_
+
+## 0.1.48
+Fri, 03 Dec 2021 03:05:22 GMT
+
+_Version update only_
+
+## 0.1.47
+Mon, 29 Nov 2021 07:26:16 GMT
+
+_Version update only_
+
+## 0.1.46
+Sat, 06 Nov 2021 00:09:13 GMT
+
+_Version update only_
+
+## 0.1.45
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 0.1.44
+Thu, 28 Oct 2021 00:08:22 GMT
+
+_Version update only_
+
+## 0.1.43
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 0.1.42
 Wed, 13 Oct 2021 15:09:54 GMT

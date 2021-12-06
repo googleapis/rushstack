@@ -1,6 +1,48 @@
 # Change Log - @rushstack/stream-collator
 
-This log was last generated on Wed, 13 Oct 2021 15:09:55 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:33 GMT and should not be manually modified.
+
+## 4.0.146
+Mon, 06 Dec 2021 16:08:33 GMT
+
+_Version update only_
+
+## 4.0.145
+Fri, 03 Dec 2021 03:05:22 GMT
+
+_Version update only_
+
+## 4.0.144
+Tue, 30 Nov 2021 20:18:41 GMT
+
+_Version update only_
+
+## 4.0.143
+Mon, 29 Nov 2021 07:26:16 GMT
+
+_Version update only_
+
+## 4.0.142
+Sat, 06 Nov 2021 00:09:13 GMT
+
+_Version update only_
+
+## 4.0.141
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 4.0.140
+Thu, 28 Oct 2021 00:08:22 GMT
+
+_Version update only_
+
+## 4.0.139
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 4.0.138
 Wed, 13 Oct 2021 15:09:55 GMT

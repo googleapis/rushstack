@@ -1,6 +1,25 @@
 # Change Log - @rushstack/eslint-config
 
-This log was last generated on Wed, 13 Oct 2021 15:09:54 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:32 GMT and should not be manually modified.
+
+## 2.5.0
+Mon, 06 Dec 2021 16:08:32 GMT
+
+### Minor changes
+
+- Temporarily disable eslint-plugin-promise until ESLint v8 support is added (https://github.com/xjamundx/eslint-plugin-promise/issues/218)
+
+## 2.4.5
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 2.4.4
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 2.4.3
 Wed, 13 Oct 2021 15:09:54 GMT

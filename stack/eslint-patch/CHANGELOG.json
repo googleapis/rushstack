@@ -2,6 +2,30 @@
   "name": "@rushstack/eslint-patch",
   "entries": [
     {
+      "version": "1.1.0",
+      "tag": "@rushstack/eslint-patch_v1.1.0",
+      "date": "Fri, 05 Nov 2021 15:09:18 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "feat(eslint-patch): Find patch targets independently of disk layout"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.9",
+      "tag": "@rushstack/eslint-patch_v1.0.9",
+      "date": "Wed, 27 Oct 2021 00:08:15 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update the package.json repository field to include the directory property."
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.8",
       "tag": "@rushstack/eslint-patch_v1.0.8",
       "date": "Wed, 13 Oct 2021 15:09:54 GMT",

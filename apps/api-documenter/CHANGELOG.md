@@ -1,6 +1,55 @@
 # Change Log - @microsoft/api-documenter
 
-This log was last generated on Wed, 13 Oct 2021 15:09:54 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:32 GMT and should not be manually modified.
+
+## 7.13.72
+Mon, 06 Dec 2021 16:08:32 GMT
+
+_Version update only_
+
+## 7.13.71
+Fri, 03 Dec 2021 03:05:22 GMT
+
+_Version update only_
+
+## 7.13.70
+Tue, 30 Nov 2021 20:18:41 GMT
+
+_Version update only_
+
+## 7.13.69
+Mon, 29 Nov 2021 07:26:16 GMT
+
+_Version update only_
+
+## 7.13.68
+Tue, 09 Nov 2021 01:09:37 GMT
+
+### Patches
+
+- Links to enum members go to the enum page in markdown output
+
+## 7.13.67
+Sat, 06 Nov 2021 00:09:13 GMT
+
+_Version update only_
+
+## 7.13.66
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 7.13.65
+Thu, 28 Oct 2021 00:08:22 GMT
+
+_Version update only_
+
+## 7.13.64
+Wed, 27 Oct 2021 00:08:14 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 7.13.63
 Wed, 13 Oct 2021 15:09:54 GMT

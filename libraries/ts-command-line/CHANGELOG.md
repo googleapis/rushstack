@@ -1,6 +1,23 @@
 # Change Log - @rushstack/ts-command-line
 
-This log was last generated on Wed, 13 Oct 2021 15:09:54 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:32 GMT and should not be manually modified.
+
+## 4.10.5
+Mon, 06 Dec 2021 16:08:32 GMT
+
+_Version update only_
+
+## 4.10.4
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 4.10.3
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 4.10.2
 Wed, 13 Oct 2021 15:09:54 GMT

@@ -1,6 +1,52 @@
 # Change Log - @rushstack/heft-node-rig
 
-This log was last generated on Wed, 13 Oct 2021 15:09:54 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:32 GMT and should not be manually modified.
+
+## 1.3.0
+Mon, 06 Dec 2021 16:08:32 GMT
+
+### Minor changes
+
+- Bump ESLint to v8
+
+## 1.2.33
+Fri, 03 Dec 2021 03:05:22 GMT
+
+_Version update only_
+
+## 1.2.32
+Tue, 30 Nov 2021 20:18:41 GMT
+
+### Patches
+
+- Set default Jest environment in Jest configuration to "jest-environment-node"
+
+## 1.2.31
+Mon, 29 Nov 2021 07:26:16 GMT
+
+_Version update only_
+
+## 1.2.30
+Sat, 06 Nov 2021 00:09:13 GMT
+
+_Version update only_
+
+## 1.2.29
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 1.2.28
+Thu, 28 Oct 2021 00:08:22 GMT
+
+_Version update only_
+
+## 1.2.27
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 1.2.26
 Wed, 13 Oct 2021 15:09:54 GMT

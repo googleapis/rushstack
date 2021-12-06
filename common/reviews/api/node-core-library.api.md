@@ -10,7 +10,7 @@ import * as child_process from 'child_process';
 import * as fs from 'fs';
 
 // @public
-export const enum AlreadyExistsBehavior {
+export enum AlreadyExistsBehavior {
     Error = "error",
     Ignore = "ignore",
     Overwrite = "overwrite"
@@ -128,7 +128,7 @@ export class ConsoleTerminalProvider implements ITerminalProvider {
 }
 
 // @public
-export const enum Encoding {
+export enum Encoding {
     // (undocumented)
     Utf8 = "utf8"
 }
@@ -180,7 +180,7 @@ export type ExecutableStdioMapping = 'pipe' | 'ignore' | 'inherit' | ExecutableS
 export type ExecutableStdioStreamMapping = 'pipe' | 'ignore' | 'inherit' | NodeJS.WritableStream | NodeJS.ReadableStream | number | undefined;
 
 // @public
-export const enum FileConstants {
+export enum FileConstants {
     PackageJson = "package.json"
 }
 
@@ -261,7 +261,7 @@ export class FileWriter {
 }
 
 // @public
-export const enum FolderConstants {
+export enum FolderConstants {
     Git = ".git",
     NodeModules = "node_modules"
 }
@@ -465,7 +465,7 @@ export interface INodePackageJson {
     optionalDependencies?: IPackageJsonDependencyTable;
     peerDependencies?: IPackageJsonDependencyTable;
     private?: boolean;
-    repository?: string;
+    repository?: string | IPackageJsonRepository;
     resolutions?: Record<string, string>;
     scripts?: IPackageJsonScriptTable;
     // @beta
@@ -497,6 +497,13 @@ export interface IPackageJsonDependencyTable {
 // @public
 export interface IPackageJsonLookupParameters {
     loadExtraFields?: boolean;
+}
+
+// @public
+export interface IPackageJsonRepository {
+    directory?: string;
+    type: string;
+    url: string;
 }
 
 // @public
@@ -639,7 +646,7 @@ export class MapExtensions {
 }
 
 // @public
-export const enum NewlineKind {
+export enum NewlineKind {
     CrLf = "\r\n",
     Lf = "\n",
     OsDefault = "os"
@@ -694,7 +701,7 @@ export class Path {
 }
 
 // @public
-export const enum PosixModeBits {
+export enum PosixModeBits {
     AllExecute = 73,
     AllRead = 292,
     AllWrite = 146,

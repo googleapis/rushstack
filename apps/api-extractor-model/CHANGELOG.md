@@ -1,6 +1,33 @@
 # Change Log - @microsoft/api-extractor-model
 
-This log was last generated on Wed, 13 Oct 2021 15:09:54 GMT and should not be manually modified.
+This log was last generated on Mon, 06 Dec 2021 16:08:33 GMT and should not be manually modified.
+
+## 7.13.18
+Mon, 06 Dec 2021 16:08:33 GMT
+
+_Version update only_
+
+## 7.13.17
+Fri, 03 Dec 2021 03:05:22 GMT
+
+_Version update only_
+
+## 7.13.16
+Sat, 06 Nov 2021 00:09:13 GMT
+
+_Version update only_
+
+## 7.13.15
+Fri, 05 Nov 2021 15:09:18 GMT
+
+_Version update only_
+
+## 7.13.14
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 7.13.13
 Wed, 13 Oct 2021 15:09:54 GMT

@@ -2,6 +2,35 @@
   "name": "@rushstack/eslint-plugin-security",
   "entries": [
     {
+      "version": "0.2.4",
+      "tag": "@rushstack/eslint-plugin-security_v0.2.4",
+      "date": "Mon, 06 Dec 2021 16:08:32 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add support for ESLint v8"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.2.3",
+      "tag": "@rushstack/eslint-plugin-security_v0.2.3",
+      "date": "Wed, 27 Oct 2021 00:08:15 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update the package.json repository field to include the directory property."
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@rushstack/tree-pattern\" to `0.2.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.2.2",
       "tag": "@rushstack/eslint-plugin-security_v0.2.2",
       "date": "Thu, 07 Oct 2021 07:13:35 GMT",

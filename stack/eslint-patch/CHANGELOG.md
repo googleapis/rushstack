@@ -1,6 +1,20 @@
 # Change Log - @rushstack/eslint-patch
 
-This log was last generated on Wed, 13 Oct 2021 15:09:54 GMT and should not be manually modified.
+This log was last generated on Fri, 05 Nov 2021 15:09:18 GMT and should not be manually modified.
+
+## 1.1.0
+Fri, 05 Nov 2021 15:09:18 GMT
+
+### Minor changes
+
+- feat(eslint-patch): Find patch targets independently of disk layout
+
+## 1.0.9
+Wed, 27 Oct 2021 00:08:15 GMT
+
+### Patches
+
+- Update the package.json repository field to include the directory property.
 
 ## 1.0.8
 Wed, 13 Oct 2021 15:09:54 GMT
