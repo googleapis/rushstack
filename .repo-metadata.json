@@ -1,3 +1,9 @@
 {
-  "codeowner_team": "@googleapis/cx-eng"
+  "name": "rushstack",
+  "name_pretty": "Rushstack",
+  "product_documentation": "https://github.com/googleapis/rushstack",
+  "client_documentation": "https://github.com/googleapis/rushstack",
+  "release_level": "preview",
+  "codeowner_team": "@googleapis/cx-eng",
+  "library_type": "OTHER"
 }
