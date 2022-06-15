@@ -57,7 +57,6 @@ import { IYamlTocFile, IYamlTocItem } from '../yaml/IYamlTocFile';
 import { Utilities } from '../utils/Utilities';
 import { CustomMarkdownEmitter } from '../markdown/CustomMarkdownEmitter';
 
-
 const sampleCache = new Map();
 
 const yamlApiSchema: JsonSchema = JsonSchema.fromFile(
@@ -412,7 +411,7 @@ export class YamlDocumenter {
             // for not fenced code: <caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket Another example:
 
             // resolve a region_tag, see https://github.com/googleapis/jsdoc-region-tag/blob/main/src/index.js
-            const REGION_TAG = 'region\\\_tag';
+            const REGION_TAG = 'region\\_tag';
             if (example.includes(REGION_TAG)) {
               if (sampleCache.size === 0) {
                 exports.loadSampleCache();
@@ -421,17 +420,19 @@ export class YamlDocumenter {
               //2 options for tags with and without the intro
               //<caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket Another example:
               //<caption>include:samples/buckets.js</caption> region\_tag:storage\_create\_bucket
-              const match = example.match(/region\\\_tag:([^ ]*)( (.*))?/);
-              if(!match) {throw new Error(`wrong region tag ${example}`);}
+              const match: RegExpMatchArray | null = example.match(/region\\\_tag:([^ ]*)( (.*))?/);
+              if (!match) {
+                throw new Error(`wrong region tag ${example}`);
+              }
               // remove the escaping slashes from they key
-              const key = match[1].split('\\').join('');
-              const intro = match[3];
-              const sample = sampleCache.get(key);
+              const key: string = match[1].split('\\').join('');
+              const intro: string = match[3];
+              const sample: string = sampleCache.get(key);
               if (!sample) {
-                console.warn(`could not find sample ${key}`);
+                throw new Error(`could not find sample ${key}`);
               } else {
-                const preamble = intro ? intro + '\n' : '';
-                example = preamble + '```\n' + sample + '\n```';
+                const preamble: string = intro ? intro + '\n' : '';
+                example = preamble + '<pre class="prettyprint"><code>\n' + sample + '\n</pre></code>';
               }
             }
 
@@ -690,7 +691,9 @@ export class YamlDocumenter {
     };
     yamlItem.syntax = syntax;
 
-    if (apiItem.propertyTypeExcerpt.text) {
+    if (yamlItem.type !== 'property' && apiItem.propertyTypeExcerpt.text) {
+      // do not set a return type for properties as it will render a useless
+      // Property value box
       syntax.return = {
         type: [this._renderType(uid, apiItem.propertyTypeExcerpt)]
       };
@@ -1081,19 +1084,17 @@ export class YamlDocumenter {
   }
 }
 
-
 const glob = require('glob');
-const {readFileSync, statSync} = require('fs');
-const {resolve} = require('path');
+const { readFileSync, statSync } = require('fs');
+const { resolve } = require('path');
 
-const SAMPLES_DIRECTORY =
-  process.env.SAMPLES_DIRECTORY || resolve(process.cwd(), './samples');
+const SAMPLES_DIRECTORY = process.env.SAMPLES_DIRECTORY || resolve(process.cwd(), './samples');
 const REGION_START_REGEX = /\[START\s+([^\]]+)/;
 const REGION_END_REGEX = /\[END/;
 
 exports.loadSampleCache = function () {
   const sampleCandidates = glob.sync(`${SAMPLES_DIRECTORY}/**/*.{js,ts}`, {
-    ignore: ['node_modules'],
+    ignore: ['node_modules']
   });
   for (const candidate of sampleCandidates) {
     const stat = statSync(candidate);

@@ -1,17 +1,12 @@
-.github/CODEOWNERS @iclanton @octogonz @patmill @apostolisms
-common/config/**/* @iclanton @octogonz @patmill @apostolisms
+# Code owners file.
+# This file controls who is tagged for review for any given pull request.
+#
+# For syntax help see:
+# https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
 
-common/reviews/**/* @iclanton @octogonz @apostolisms
 
-apps/**/* @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
-build-tests/**/* @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
-core-build/**/* @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
-libraries/**/* @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
-stack/**/* @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
-webpack/**/* @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
-rush.json @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
-.gitattributes @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
-.gitignore @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
-README.md @iclanton @octogonz @apostolisms @halfnibble @sachinjoseph @D4N14L
+# The cx-eng team is the default owner for nodejs repositories.
+*     @googleapis/cx-eng @googleapis/yoshi-nodejs
 
-libraries/load-themed-styles/**/* @iclanton @octogonz @dzearing @apostolisms
+# The github automation team is the default owner for the auto-approve file.
+.github/auto-approve.yml @googleapis/github-automation
