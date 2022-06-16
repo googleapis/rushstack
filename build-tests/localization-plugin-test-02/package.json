@@ -13,7 +13,7 @@
     "@rushstack/module-minifier-plugin": "workspace:*",
     "@rushstack/node-core-library": "workspace:*",
     "@rushstack/set-webpack-public-path-plugin": "workspace:*",
-    "@types/lodash": "4.14.116",
+    "@types/lodash": "4.14.182",
     "@types/webpack-env": "1.13.0",
     "html-webpack-plugin": "~4.5.0",
     "lodash": "~4.17.15",
