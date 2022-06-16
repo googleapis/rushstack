@@ -24,6 +24,6 @@
   "devDependencies": {
     "@rushstack/heft": "0.41.6",
     "@rushstack/heft-node-rig": "1.2.25",
-    "@types/node": "12.20.24"
+    "@types/node": "12.20.55"
   }
 }
