@@ -28,7 +28,7 @@
     "@rushstack/heft-node-rig": "1.2.25",
     "@types/fs-extra": "7.0.0",
     "@types/heft-jest": "1.0.1",
-    "@types/jju": "1.4.1",
+    "@types/jju": "1.4.2",
     "@types/resolve": "1.17.1",
     "@types/semver": "7.3.5",
     "@types/timsort": "0.3.0",
