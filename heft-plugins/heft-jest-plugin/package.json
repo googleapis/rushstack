@@ -32,7 +32,7 @@
     "@microsoft/api-extractor": "workspace:*",
     "@rushstack/eslint-config": "workspace:*",
     "@rushstack/heft": "workspace:*",
-    "@types/heft-jest": "1.0.1",
+    "@types/heft-jest": "1.0.3",
     "@types/lodash": "4.14.116",
     "@types/node": "12.20.24",
     "eslint": "~7.30.0",
