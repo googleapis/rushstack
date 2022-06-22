@@ -1,11 +1,8 @@
 {
-  "name": "@microsoft/api-documenter",
+  "name": "@googleapis/api-documenter",
   "version": "7.13.63",
-  "description": "Read JSON files from api-extractor, generate documentation pages",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/microsoft/rushstack/tree/master/apps/api-documenter"
-  },
+  "description": "Read JSON files from api-extractor, generate documentation pages. Fork of @microsoft/api-documenter to support GCP specific YAML requirements.",
+  "repository": "googleapis/rushstack",
   "homepage": "https://api-extractor.com/",
   "license": "MIT",
   "scripts": {
