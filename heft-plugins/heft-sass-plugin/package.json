@@ -21,7 +21,7 @@
     "@rushstack/heft-config-file": "workspace:*",
     "@rushstack/node-core-library": "workspace:*",
     "@rushstack/typings-generator": "workspace:*",
-    "node-sass": "5.0.0",
+    "node-sass": "7.0.0",
     "postcss": "7.0.32",
     "postcss-modules": "~1.5.0"
   },
