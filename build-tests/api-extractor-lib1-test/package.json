@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@microsoft/api-extractor": "workspace:*",
-    "fs-extra": "~7.0.1",
-    "typescript": "~2.9.2"
+    "fs-extra": "7.0.1",
+    "typescript": "2.9.2"
   }
 }

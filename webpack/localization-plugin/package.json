@@ -45,6 +45,6 @@
     "@types/lodash": "4.14.116",
     "@types/webpack": "4.41.24",
     "@types/xmldoc": "1.1.4",
-    "webpack": "~4.44.2"
+    "webpack": "4.44.2"
   }
 }

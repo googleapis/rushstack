@@ -21,7 +21,7 @@
   "dependencies": {
     "@rushstack/node-core-library": "workspace:*",
     "@rushstack/ts-command-line": "workspace:*",
-    "string-argv": "~0.3.1"
+    "string-argv": "0.3.1"
   },
   "devDependencies": {
     "@rushstack/eslint-config": "workspace:*",
