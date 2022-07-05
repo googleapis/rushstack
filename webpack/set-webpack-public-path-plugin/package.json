@@ -30,7 +30,7 @@
     "@types/heft-jest": "1.0.1",
     "@types/lodash": "4.14.116",
     "@types/node": "12.20.24",
-    "@types/tapable": "1.0.6",
+    "@types/tapable": "1.0.8",
     "@types/uglify-js": "2.6.29",
     "@types/webpack": "4.41.24"
   }
