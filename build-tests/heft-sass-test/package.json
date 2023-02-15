@@ -14,7 +14,7 @@
     "@rushstack/heft-sass-plugin": "workspace:*",
     "@rushstack/heft-webpack4-plugin": "workspace:*",
     "@types/heft-jest": "1.0.1",
-    "@types/react-dom": "16.9.8",
+    "@types/react-dom": "16.9.18",
     "@types/react": "16.9.45",
     "@types/webpack-env": "1.13.0",
     "autoprefixer": "~9.8.0",
