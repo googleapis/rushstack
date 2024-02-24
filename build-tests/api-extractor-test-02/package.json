@@ -9,7 +9,7 @@
     "build": "node build.js"
   },
   "dependencies": {
-    "@types/semver": "7.3.5",
+    "@types/semver": "7.5.8",
     "api-extractor-test-01": "workspace:*",
     "semver": "~7.3.0"
   },
