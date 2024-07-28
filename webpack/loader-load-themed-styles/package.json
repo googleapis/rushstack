@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@microsoft/load-themed-styles": "workspace:*",
-    "loader-utils": "~1.1.0"
+    "loader-utils": "~1.4.2"
   },
   "devDependencies": {
     "@rushstack/eslint-config": "workspace:*",
