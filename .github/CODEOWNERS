@@ -5,5 +5,5 @@
 # https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
 
 
-# The cx-eng team is the default owner, the jsteam handles repo infrastructure.
+# The dkp team is the default owner, the jsteam handles repo infrastructure.
 *     @googleapis/dkp @googleapis/jsteam
