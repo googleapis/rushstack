@@ -4,6 +4,6 @@
   "product_documentation": "https://github.com/googleapis/rushstack",
   "client_documentation": "https://github.com/googleapis/rushstack",
   "release_level": "preview",
-  "codeowner_team": "@googleapis/cx-eng",
+  "codeowner_team": "@googleapis/dkp",
   "library_type": "OTHER"
 }
